@@ -1,0 +1,35 @@
+# ========================
+# ML / Finanzas - .gitignore (versión pro)
+# ========================
+
+# Datos grandes (nunca subir a GitHub)
+data/raw/*
+data/processed/*
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos entrenados
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+!models/.gitkeep
+
+# Secrets y claves API
+*.env
+config/secrets.yaml
+config/*.yaml
+
+# Caché y temporales
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/settings.json
+mlruns/
+*.log
+*.csv
+*.parquet
+
+# Notebooks muy pesados (opcional al principio)
+notebooks/*.ipynb
